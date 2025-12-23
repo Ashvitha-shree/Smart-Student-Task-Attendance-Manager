@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Task & Attendance Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>📘 Student Manager</h1>
+
+<div class="container">
+
+    <!-- Task Section -->
+    <section>
+        <h2>📝 Task Manager</h2>
+        <input type="text" id="taskInput" placeholder="Enter task">
+        <button onclick="addTask()">Add Task</button>
+        <ul id="taskList"></ul>
+    </section>
+
+    <!-- Attendance Section -->
+    <section>
+        <h2>📊 Attendance Tracker</h2>
+        <button onclick="markPresent()">Present</button>
+        <button onclick="markAbsent()">Absent</button>
+        <p id="attendance"></p>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
